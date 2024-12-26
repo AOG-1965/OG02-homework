@@ -1,6 +1,10 @@
-a = float(input("Введите первое число "))
-b = float(input("Введите первое число "))
+a = float(input("Введите первое число: "))
+b = float(input("Введите второе число: "))
 
-result = a / b
+def divide(a, b):
+    if b == 0:
+        return "Деление на ноль невозможно!"
+    return a / b
 
+result = divide(a, b)
 print(f"Результат деления: {result}")
